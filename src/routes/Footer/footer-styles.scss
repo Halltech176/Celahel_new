@@ -1,0 +1,25 @@
+$main-color: #f4f4f4;
+$max-width: 1324px;
+
+.bg-dark{
+    padding: 3rem;
+    background-color: black;
+    color: $main-color;
+    min-height: 25vh;
+
+   .container{
+        max-width: $max-width;
+        margin: 0 auto;
+        .grid{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+            grid-gap: 1rem;
+            text-align: left;
+            ul li{
+                margin: .5rem 0;
+                cursor: pointer;
+                color: #d3d3d3;
+            }
+        }
+    }
+}

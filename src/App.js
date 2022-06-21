@@ -1,14 +1,16 @@
-import './App.scss';
+import "./App.scss";
+import Footer from "./routes/Footer/footer.component";
+import Navbar from "./routes/Nav/Navbar.component";
+import Home from "./components/Home/Home";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-  <h1>Celahel</h1>
-  <h3 className="text-4xl text-primary font-bold underline">
-      Hello world!
-    </h3>
-    <p>welcome bro</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navbar />}>
+        <Route index element={<Home />}></Route>
+      </Route>
+    </Routes>
   );
 }
 

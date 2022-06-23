@@ -5,7 +5,7 @@ import React from 'react'
 function Logo() {
   return (
     <div>
-    <h1 className='text-light'>CEL<IoHomeOutline/>HL</h1>
+    <h1 className=''>CEL<IoHomeOutline/>HL</h1>
     </div>
   )
 }

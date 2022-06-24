@@ -5,6 +5,7 @@
     overflow-y: hidden;
     line-height: 1.75rem;
     // position: relative;
+    max-width: 100%;
     box-sizing: border-box;
     .dotted{
         position: relative;
@@ -46,7 +47,7 @@
     .bg-danger{
         position: absolute;
         top: 250px;
-        right: 70px;
+        right: 50px;
     }
     .bg-info{
         position: absolute;
@@ -56,7 +57,7 @@
     .bg-success{
         position: absolute;
         bottom: 100px;
-        right: 70px;
+        right: 50px;
     }
 }
 .pt-10{

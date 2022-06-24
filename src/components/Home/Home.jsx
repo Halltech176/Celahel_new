@@ -21,17 +21,17 @@ function Home() {
               atque at maxime cupiditate recusandae non corrupti sequi voluptas
               pariatur vero eius!
             </p>
-            <button className="btn btn-light mt-3">Get Mobile App</button>
+            <button className="btn btn-light mt-3 btn-block">Get Mobile App</button>
           </div>
         </div>
-        <div className="col-12 col-md-6 mx-auto">
+        <div className="col-12 col-md-6">
           <div className="container">
             <div className="imgContainer px-0">
               <span className="badge bg-primary p-3 shadow-lg">Relaxation</span>
               <span className="badge bg-info p-3 shadow-lg">Get Hostel</span>
               <span className="badge bg-danger p-3 shadow-lg">Buy House</span>
               <span className="badge bg-success p-3 shadow-lg">Rent House</span>
-              <img src={displayImage} alt="" height="100%" width="90%" />
+              <img src={displayImage} alt="" height="100%" width="100%" />
             </div>
           </div>
         </div>

@@ -1,0 +1,16 @@
+
+form{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+input[type^='number']{
+    width: 70px;
+    padding: 1.5rem 5px 1.5rem 30px;
+    background: rgba(202, 202, 247, 0.5);
+    outline: none;
+    border: none;
+    margin: 5px;
+    color: #333 !important;
+}

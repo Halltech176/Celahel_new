@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import "./navbar-styles.scss";
 import { AppBar, Toolbar } from "@mui/material";
 import Logo from "../../components/Logo/Logo.component";
@@ -8,6 +8,10 @@ import Footer from "../Footer/footer.component";
 
 function Navbar() {
   const pathname = window.location.href;
+  const navigate = useNavigate();
+  const GoHome =()=>{
+    navigate('/')
+  }
   console.log(pathname);
   pathname !== 'http://localhost:3000/'? console.log('other'): console.log(pathname);;
   return (
@@ -17,7 +21,7 @@ function Navbar() {
         className={
           pathname !== "http://localhost:3000/"
             ? "navbar navbar-expand-lg navbar-light text-primary"
-            : "position-absolute w-100 text-light navbar navbar-expand-lg navbar-light"
+            : "position-absolute w-100 navbar navbar-expand-lg navbar-dark"
         }
         navbar
         navbar-expand-lg
@@ -26,7 +30,10 @@ function Navbar() {
         style={{ top: "0", left: "0" }}
       >
         <div className="container-fluid justify-content-between">
-          <Logo />
+        <div className="navbar-brand">
+           <Logo GoHome={GoHome}/>
+        </div>
+         
           <button
             className="navbar-toggler"
             type="button"
@@ -39,18 +46,17 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse d-flex justify-content-md-end"
+            className="collapse navbar-collapse"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav mb-lg-0 d-flex nav-pills">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item px-md-3">
                 <Link
                   className={
                     pathname !== "http://localhost:3000/"
                       ? "nav-link active"
-                      : "nav-link active text-light"
+                      : "nav-link text-light"
                   }
-                 
                   to="/"
                 >
                   Home
@@ -63,7 +69,6 @@ function Navbar() {
                       ? "nav-link text-primary"
                       : "nav-link text-light"
                   }
-                
                   to="/about"
                 >
                   About

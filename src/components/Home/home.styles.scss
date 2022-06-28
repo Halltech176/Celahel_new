@@ -1,9 +1,6 @@
 .hero{
-    height: 85vh;
-    padding-top: 72px;
-    overflow-x: hidden;
-    overflow-y: hidden;
     line-height: 1.75rem;
+    margin: 0 auto;
     // position: relative;
     max-width: 100%;
     box-sizing: border-box;
@@ -34,10 +31,7 @@
 }
 
 .imgContainer{
-    height: 550px;
-    width: 560px;
-    overflow: hidden;
-    // margin-bottom: 5rem;
+    width: 100%;
     position: relative;
     .bg-primary{
         position: absolute;
@@ -64,10 +58,8 @@
     padding-top: 80px;
 }
 .howItWorks{
-    height: 80vh;
-    padding: 3rem 0;
-    overflow: hidden;
-    .card{
+    
+    .card-body{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -91,12 +83,16 @@
     border-radius: 20px !important;
     margin: 0 auto;
     position: relative;
-    height: 40vh;
+    // height: 40vh;
 }
-.phone{
+.doMore{
+    height: 65vh;
+    margin: 7rem 0;
+    position: relative;
+    .phone{
     position: absolute;
-   top: -8rem;
-    // right: -20rem;
-    // transform: skew(-50deg, 0);
+    height: fit-content;
+   top: -10rem;
     z-index: 1;
+}
 }

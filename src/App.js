@@ -6,7 +6,8 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import MakePayment from "./routes/Payment/MakePayment";
 import SideBar from './routes/Nav/sideBar/SideNav.component';
-
+import Plan from "./components/Account_plan/Plan.component";
+import OTPVerify from "./components/OTP/OTPVerify";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="about" element={<About />}></Route>
         <Route path="make_payment" element={<MakePayment />}></Route>
         <Route path='dashboard' element={<SideBar/>}></Route>
+        <Route path='plans' element={<Plan/>}></Route>
+        <Route path='input_OTP' element={<OTPVerify/>}></Route>
       </Route>
     </Routes>
   );

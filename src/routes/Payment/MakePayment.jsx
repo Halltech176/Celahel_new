@@ -1,12 +1,18 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 
 function MakePayment() {
+const navigate = useNavigate()
+
+const goTo = () =>{
+    navigate('/input_OTP')
+}
   return (
     <div>
     <div className="container">
          <h2>Make Payment</h2>
 
-        <form action="#" className="form-group">
+        <form action="#" className="form-group" onSubmit={()=>{goTo()}}>
         
             <div className="row">
             <div className="col-12 mb-3">

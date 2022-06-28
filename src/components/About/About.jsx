@@ -1,14 +1,14 @@
 import React from "react";
 import './about.styles.scss'
-import { Route, useLocation } from "react-router-dom";
+// import { Route, useLocation } from "react-router-dom";
 
-function About(props) {
+function About() {
   const pathname = window.location.pathname
   // const path = useLocation();
   console.log(pathname)
   return (
     <div className="mt-20 container-fluid">
-      <div className="row my-10">
+      <div className="d-flex my-10">
         <div className="col-md-7 container">
           <h1 className="h1 text-primary">Buy/Book Relaxation</h1>
           <h2>{pathname}</h2>

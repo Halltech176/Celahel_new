@@ -10,6 +10,8 @@ import Contact from "./components/forms/Contact/Contact"
 import Signin from "./components/forms/Signin/Signin"
 import Login from "./components/forms/Login/Login"
 import Faq  from "./components/forms/Faq/Faq"
+import MakePayment from "./components/routes/Payment/MakePayment"
+
 import NoMatch from "./components/routes/NoMatch";
 
 import {ContextProvider} from './Context/UserContext'
@@ -37,8 +39,9 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/signin' element={<Signin/>}/>
+        <Route path='/make_payment' element={<MakePayment/>}/>
       </Routes>
-     {/* <Footer/> */}
+     <Footer/>
      </ContextProvider>
      </>
   );

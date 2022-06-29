@@ -9,6 +9,13 @@ ul li{
     color: #d3d3d3;
     list-style: none;
 }
+body::before{
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    z-index: -2;
+}
 .mt-20{
 margin-top: 130px;
 }
